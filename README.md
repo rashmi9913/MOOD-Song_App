@@ -2,5 +2,5 @@
 Listen musics on your mood.
 
 Listen to music based on user current mood.
-This app contains 12 playlists user 12 different moods.
+This app contains 12 playlists under 12 different moods.
 User may choose his/her mood manually.
