@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Mood">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F7F7F7">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:splitMotionEvents="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias=".1"
+            app:layout_constraintVertical_chainStyle="packed">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingTop="20dp"
+                app:srcCompat="@drawable/today"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/linear_1"/>
+
+            <LinearLayout
+                android:id="@+id/linear_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                app:layout_constraintBottom_toBottomOf="@id/imageView5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView20"
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="15dp"
+                                app:srcCompat="@drawable/angry" />
+
+                            <ImageView
+                                android:id="@+id/imageView21"
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="50dp"
+                                app:srcCompat="@drawable/bored" />
+
+                            <ImageView
+                                android:id="@+id/imageView22"
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="50dp"
+                                app:srcCompat="@drawable/emotional" />
+
+                            <ImageView
+                                android:id="@+id/imageView23"
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="50dp"
+                                app:srcCompat="@drawable/happy" />
+
+                            <ImageView
+                                android:id="@+id/imageView24"
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="50dp"
+                                app:srcCompat="@drawable/lonely" />
+
+                            <ImageView
+                                android:id="@+id/imageView25"
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="50dp"
+                                app:srcCompat="@drawable/loved" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="70dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/angry_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:text="Angry"
+                                app:backgroundTint="#FC5185"
+                                app:cornerRadius="15dp" />
+
+                            <Button
+                                android:id="@+id/bored_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="50dp"
+                                android:text="Bored"
+                                app:backgroundTint="#FC5185"
+                                app:cornerRadius="15dp" />
+
+                            <Button
+                                android:id="@+id/emotional_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="50dp"
+                                android:text="Emotional"
+                                app:backgroundTint="#FC5185"
+                                app:cornerRadius="15dp" />
+
+                            <Button
+                                android:id="@+id/happy_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="50dp"
+                                android:text="Happy"
+                                app:backgroundTint="#FC5185"
+                                app:cornerRadius="15dp" />
+
+                            <Button
+                                android:id="@+id/lonely_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="50dp"
+                                android:text="Lonely"
+                                app:backgroundTint="#FC5185"
+                                app:cornerRadius="15dp" />
+
+                            <Button
+                                android:id="@+id/loved_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="50dp"
+                                android:text="Loved"
+                                app:backgroundTint="#FC5185"
+                                app:cornerRadius="15dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView26"
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="15dp"
+                                app:srcCompat="@drawable/motivated" />
+
+                            <ImageView
+                                android:id="@+id/imageView27"
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="50dp"
+                                app:srcCompat="@drawable/nervous" />
+
+                            <ImageView
+                                android:id="@+id/imageView28"
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="50dp"
+                                app:srcCompat="@drawable/positive" />
+
+                            <ImageView
+                                android:id="@+id/imageView29"
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="50dp"
+                                app:srcCompat="@drawable/romantic" />
+
+                            <ImageView
+                                android:id="@+id/imageView30"
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="50dp"
+                                app:srcCompat="@drawable/sad" />
+
+                            <ImageView
+                                android:id="@+id/imageView31"
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="50dp"
+                                app:srcCompat="@drawable/sick" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="70dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/motivated_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginRight="5dp"
+                                android:text="Motivated"
+                                app:backgroundTint="#FC5185"
+                                app:cornerRadius="15dp" />
+
+                            <Button
+                                android:id="@+id/nervous_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="50dp"
+                                android:layout_marginRight="5dp"
+                                android:text="Nervous"
+                                app:backgroundTint="#FC5185"
+                                app:cornerRadius="15dp" />
+
+                            <Button
+                                android:id="@+id/positive_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="50dp"
+                                android:layout_marginRight="5dp"
+                                android:text="Positive"
+                                app:backgroundTint="#FC5185"
+                                app:cornerRadius="15dp" />
+
+                            <Button
+                                android:id="@+id/romantic_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="50dp"
+                                android:layout_marginRight="5dp"
+                                android:text="Romantic"
+                                app:backgroundTint="#FC5185"
+                                app:cornerRadius="15dp" />
+
+                            <Button
+                                android:id="@+id/sad_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="50dp"
+                                android:layout_marginRight="5dp"
+                                android:text="Sad"
+                                app:backgroundTint="#FC5185"
+                                app:cornerRadius="15dp" />
+
+                            <Button
+                                android:id="@+id/sick_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="50dp"
+                                android:layout_marginRight="5dp"
+                                android:text="Sick"
+                                app:backgroundTint="#FC5185"
+                                app:cornerRadius="15dp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
